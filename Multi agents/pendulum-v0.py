@@ -1,15 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import numpy as np
 import gym 
 env = gym.make("Pendulum-v1")
 
-
-# In[2]:
 
 
 class RandomPolicy:
@@ -27,8 +22,6 @@ class RandomPolicy:
         high = self._max_action
         )
 
-
-# In[3]:
 
 
 policy = RandomPolicy(env)
@@ -56,10 +49,4 @@ for i in range (number_episodes):
     print('Episode %d finished, reward:%d, the length of the episode:%d'% (i, game_rew, j))
     
 env.close()
-
-
-# In[ ]:
-
-
-
 
